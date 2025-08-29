@@ -14,9 +14,8 @@ def get_token():
 
 TOKEN = get_token()
 
-CAM = 1154180718121992334
-ADMINS = [1082533157867356244, 319529334341632000, 536264328655929369, 511313788641738763]
-ALLOWED_USER_IDS = set([CAM] + ADMINS)
+ADMINS = [put ids here]
+ALLOWED_USER_IDS = (ADMINS)
 DEFAULT_TARGET_ID = 0
 DEFAULT_REMINDER_MESSAGE = "hiii naoomiiiiii, can u work on like literally anything pleasseee :D:D:D -cam"
 STATUS_MESSAGE = "alright, what's poppingggg...?"
@@ -141,4 +140,5 @@ async def on_message(message: discord.Message):
         await bot.process_commands(message)
 
 if __name__ == "__main__":
+
     bot.run(TOKEN)
